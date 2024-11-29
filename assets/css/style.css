@@ -165,7 +165,7 @@ main {
 }
 
 #logo>img {
-    width: 170px;
+    width: 260px;
 }
 
 #get-in-touch-div {
@@ -290,6 +290,7 @@ main {
     flex: 1 800px;
     flex-wrap: wrap;
     justify-content: space-evenly;
+    box-shadow: 0 4px 10px #333;
 }
 
 #our-services img {
@@ -363,7 +364,14 @@ main {
 /* contact page */
 #contact #logo {
     margin-left: 30px;
-    top: 40px;
+    top: 0;
+}
+
+#form-container {
+    display: flex;
+    margin: auto;
+    width: 90%;
+    flex-flow: wrap;
 }
 
 /* contact section */
@@ -375,20 +383,27 @@ main {
 
 /* contact details */
 #contact-details {
-    flex: 1 400px;
+    flex: 1 320px;
     display: flex;
     flex-wrap: wrap;
 }
 
-#contact-details div {
+.center-hoz {
     flex: 1 200px;
     text-align: justify;
     width: 100%;
-    height: fit-content;
+    max-height: 150px;
     margin: 10px 10px 0 10px;
     padding: 20px;
     background-color: #404040;
     border-radius: 2px;
+    display: flex;
+    align-items: center;
+    box-shadow: 0 4px 10px #333;
+}
+
+.center-hoz>a {
+    width: 100%;
 }
 
 #contact-phone,
@@ -411,11 +426,12 @@ main {
 
 /* contact form */
 #contact-form {
-    flex: 1 400px;
+    flex: 2 360px;
     margin: 10px;
     padding: 15px;
     border-radius: 2px;
     background-color: #404040;
+    box-shadow: 0 4px 10px #333;
 }
 
 #contact-form h2 {
@@ -436,13 +452,18 @@ main {
 
 .form-input {
     width: 100%;
-    height: 25px;
+    height: 30px;
     padding: 0 5px;
     margin-top: 10px;
     border-radius: 2px;
     background-color: transparent;
     border: 1px solid #fff;
     color: #fff;
+    font-size: 120%;
+}
+
+#location {
+    font-size: 100%;
 }
 
 ::placeholder {
@@ -457,6 +478,7 @@ main {
     border: 1px solid #fff;
     color: #fff;
     padding: 5px;
+    font-size: 120%;
 }
 
 .radio-buttons {
@@ -905,6 +927,11 @@ main {
     }
 
     /* contact page */
+    /* contact details */
+    #contact-form {
+        max-width: 600px;
+    }
+
     /* contact details hover */
     #contact-details a:hover {
         text-decoration: underline;
