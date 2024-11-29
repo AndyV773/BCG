@@ -18,7 +18,6 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
-h1,
 h3 {
     color: #ccad00;
     font-family: "Great Vibes", cursive;
@@ -87,16 +86,23 @@ li a {
 
 #nav-logo {
     position: absolute;
-    text-shadow: 1px 1px 2px #c0c0c0;
+    color: #fafafa;
+    display: flex;
+    font-weight: 500;
     left: 60px;
-    padding: 0 5px 5px 0;
-    color: #ccad00;
-    transform: rotate(-3deg);
+}
+
+#logo-image {
+    width: 30px;
+    height: 30px;
+    margin-top: 2px;
 }
 
 /* to hide some of the logo in navbar for smaller devices */
 .hidden-logo {
     display: none;
+    padding-left: 10px;
+    margin-top: 3px;
 }
 
 #get-a-quote {
@@ -162,15 +168,11 @@ main {
 
 #logo {
     position: absolute;
-    letter-spacing: 2px;
-    top: 30px;
-    left: 10px;
-    color: #fff;
-    font-weight: 700;
-    text-shadow: 2px 2px 8px #000;
-    text-decoration: underline;
-    font-size: 180%;
-    transform: rotate(-5deg);
+    top: -40px;
+}
+
+#logo>img {
+    width: 170px;
 }
 
 #get-in-touch-div {
@@ -246,6 +248,27 @@ main {
     width: 100%;
     height: 300px;
     position: relative;
+}
+
+#dots-container {
+    text-align: center;
+    margin: auto;
+    margin-top: 10px;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+.active-dot {
+    background-color: #717171;
 }
 
 #services-heading fieldset {
@@ -347,8 +370,7 @@ main {
 /* contact page */
 #contact #logo {
     margin-left: 30px;
-    margin-top: 60px;
-    font-size: 280%;
+    top: 40px;
 }
 
 /* contact section */
@@ -720,6 +742,18 @@ main {
         left: 7rem;
     }
 
+    #nav-logo {
+        left: 10px;
+        padding: 10px 10px;
+        letter-spacing: 4px;
+        font-size: 180%;
+    }
+
+    /* to show larger logo in navbar for larger devices */
+    .hidden-logo {
+        display: unset;
+    }
+
     #menu {
         display: flex;
     }
@@ -730,18 +764,6 @@ main {
 
     .nav-toggle-label {
         display: none;
-    }
-
-    #nav-logo {
-        left: 10px;
-        padding: 10px 10px;
-        letter-spacing: 2px;
-        font-size: 180%;
-    }
-
-    /* to show larger logo in navbar for larger devices */
-    .hidden-logo {
-        display: unset;
     }
 
     #get-a-quote {
@@ -757,9 +779,7 @@ main {
     /* hero image */
     #logo {
         font-size: 280%;
-        letter-spacing: 4px;
-        top: 50px;
-        left: 20px;
+        top: -20px;
     }
 
     #get-in-touch-div {
