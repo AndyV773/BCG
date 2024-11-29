@@ -1,131 +1,302 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# BCG Building Contractor
 
-Welcome USER_NAME,
+BCG Building Contractor is a website project created to help showcase the services of a building firm. The website provides information about the various services that can be provided, such as kitchen installations, door fittings, architraves, fencing, roofing, loft extensions, and new builds. It aims to help potential clients find and contact the contractor online.
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+**The deployed website can be found here:** [BCG Building Contractors](https://andyv773.github.io/bcg-test)
 
-You can safely delete this README.md file or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **June 18, 2024**
+![screenshot of index.html from i am responsive website displaying it in all sized devices](assets/media/resp-index.webp)
 
-## Gitpod Reminders
+## Project Overview
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+This project is a website designed to showcase the services provided by a building contractor. The primary goal is to help the contractor reach a wider audience and make it easier for potential clients to get in touch. The website features a color scheme of gold and silver, complemented by black and grey tones, to create a professional and elegant look that goes well with the imported Google font "Great Vibes".
 
-`python3 -m http.server`
+My original design placed the navbar at the bottom of the hero image, but I struggled to get it to work correctly with sticky positioning. This project began as a practice website, so my Git commits were not done as they should have been. I also made a lot of trial-and-error changes to get things working correctly and did not want these reflected in my commit messages. However, I now realize this approach was incorrect. I have since committed my web design and will commit any further changes properly.
 
-A blue button should appear to click: _Make Public_,
+Since I have also underlined the logo in the navbar this has not been updated in the images.
 
-Another blue button should appear to click: _Open Browser_.
+## User Stories
 
-To run a backend Python file, type `python3 app.py` if your Python file is named `app.py`, of course.
+### New User
 
-A blue button should appear to click: _Make Public_,
+- **Understanding the Services:** I want to quickly understand what building services the contractor offers.
+- **Easy Navigation:** I want to be able to explore all the available services and information on the site easily.
+- **Service Visibility:** I want to see the range of services, such as kitchens, doors, architraves, fencing, roofing, loft conversions, extensions, and new builds, immediately.
+- **Getting Answers:** If I have questions about the services or need a quote, I should be able to get answers easily through a contact system.
 
-Another blue button should appear to click: _Open Browser_.
+### Returning User
 
-By Default, Gitpod gives you superuser security privileges. Therefore, you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+- **Checking for Updates:** I want to come back to the site often to see if there are any new services or updates.
+- **Detailed Information:** I want to return to the site for detailed information about specific building services.
+- **Project Inspiration:** I want to see examples of completed projects for inspiration and assurance of quality.
 
-To log into the Heroku toolbelt CLI:
+### Other Customer Scenarios
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+- **Understanding Services and Pricing:** I’m a potential customer who wants to know the costs and availability of the services offered.
+- **Contact and Quotes:** I want to be able to easily contact the contractor for quotes and further inquiries about my specific building needs.
+- **Visualizing the Work:** I want to see images and descriptions of past work to help visualize what the contractor can do for my project.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you, so do not share it. If you accidentally make it public, you can create a new one with _Regenerate API Key_.
+## Features
 
-### Connecting your Mongo database
+### Color Scheme
 
-- **Connect to Mongo CLI on a IDE**
-- navigate to your MongoDB Clusters Sandbox
-- click **"Connect"** button
-- select **"Connect with the MongoDB shell"**
-- select **"I have the mongo shell installed"**
-- choose **mongosh (2.0 or later)** for : **"Select your mongo shell version"**
-- choose option: **"Run your connection string in your command line"**
-- in the terminal, paste the copied code `mongo "mongodb+srv://<CLUSTER-NAME>.mongodb.net/<DBname>" --apiVersion 1 --username <USERNAME>`
-  - replace all `<angle-bracket>` keys with your own data
-- enter password _(will not echo **\*\*\*\*** on screen)_
+- **The site uses the following colors:**
+  - Black: #000000
+  - Onyx: #404040
+  - Silver: #CCCCCC
+  - White: #FFFFFF
+  - Old Gold: #CCBB00
 
-------
+![screenshot of color pallets taken from coolors.co](assets/media/color-chart.webp)
 
-## Release History
+This color pallet was made in [Coolors](https://coolors.co)
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+I also used [W3S color picker](https://www.w3schools.com/colors/colors_picker.asp) to help find the colors, and hex numbers i was after.
 
-**June 18, 2024,** Add Mongo back into template
+### Header
 
-**June 14, 2024,** Temporarily remove Mongo until the key issue is resolved
+The primary purpose of the header is to provide easy navigation across the website. A key feature is the "Get a Quote" link located at the top right corner, which directs potential customers to the contact page.
 
-**May 28 2024:** Fix Mongo and Links installs
+- **Consistent Header:** The header uses fixed positioning to remain consistent throughout the website. Originally, the navbar was intended to be displayed below the main image, but there were issues with using sticky positioning.
+- **Customizable Branding:** The logo and images used on the website can be easily changed to better suit the client's branding and preferences.
+- **Stylish Design:** The website includes a slight 30% fade at the bottom of the header to enhance its appearance and blend seamlessly with the hero image.
+- **Three Main Pages:** The website is structured around three main pages, providing clear and organized information about the contractor's services. It is collapsible on small devices to take up less room, along with the client branding.
 
-**April 26 2024:** Update node version to 16
+![screenshot of main header for the website](assets/media/large-header.webp)
 
-**September 20 2023:** Update Python version to 3.9.17.
+- **Responsive Design:** The navbar and logo adjust for smaller screens to ensure a great user experience across all devices.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+![screenshot of main header for small devices](assets/media/small-header.webp)
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Footer
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+The footer is a significant part of the website, designed to be consistent across all three pages and providing comprehensive information. It consists of several sections, each serving a specific purpose:
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+- **Our Services section:** 
+  - This section lists all the services offered by the contractor.
+  - Each service is linked to the corresponding section on the service page for easy navigation.
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+- **Contact Section:** 
+  - Contains all the client's contact details including address, company number, phone number, and email.
+  - All contact details are interactive, allowing users to click to call or send an email directly.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+- **Social Section:** 
+  - Displays relevant social media information and links.
+  - Helps users connect with the contractor on various social media platforms.
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+- **Copyright Information:** 
+  - Located at the bottom of the footer, this section includes copyright details.
+  - A small navigation menu is also included for quick access to other parts of the site.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+![screenshot of the footer for the website with all relative information](assets/media/large-footer.webp)
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+- **Design and Accessibility**
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+  - **Two-Tone Design:** The footer is designed with two tones to visually separate the lower footer, enhancing the overall look and readability.
+  - **Responsive Design:** The footer is optimized to look good and function well on all devices, ensuring a consistent user experience across desktops, tablets, and smartphones.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+![screenshot of footer layout for smaller devices](assets/media/small-footer.webp)
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+![screenshot of the footer from i am responsive website displaying it in all sized devices](assets/media/resp-footer.webp)
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+Significant effort was dedicated to designing and implementing the footer to ensure it is both informative and visually appealing. This part of the project took up most of the development time due to the attention to detail and the need for comprehensive functionality.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
+### Home Page
 
-------
+The home page is designed to engage visitors and provide them with essential information about the contractor and the services offered. It includes the following features and sections:
 
-## FAQ about the uptime script
+- **Hero Image:** A captivating hero image is displayed at the top of the page to catch visitors' eyes. The logo is positioned at the top left corner of the hero image, and an interactive phone number is located at the bottom right corner. The phone number includes an animated phone icon that moves every 8 seconds to attract attention.
+  
+![screenshot of main page hero image and header](assets/media/index-1.webp)
 
-**Why have you added this script?**
+- **Reasons Section:**
+  - **About Me:** This section provides some information about the contractor, including their background, expertise, and values. It features an image to help personalize the introduction.
+  - **Why Choose Us:** This section outlines the key reasons why potential clients should choose the contractor. It highlights unique selling points and benefits, accompanied by an image to enhance visual appeal. Additionally, it includes two anchor tags: one that takes you to the contact page and another that takes you to the services page.
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+![screenshot of main content reasons secton with about and why choose us information including two images](assets/media/index-2.webp)  
 
-**How will this affect me?**
+### Services Page
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+The service page is aimed at providing a brief description of the different services offered by the contractor. Each service is presented with an image and a breif description to give potential clients a clear understanding of what is available.
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+- **Services Offered:**
+  - Kitchens
+  - Doors
+  - Architraves
+  - Fencing
+  - Roofing
+  - Loft Extensions
+  - Extensions
+  - New Builds
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+- **Main Image:** At the top of the service page, there is a large image similar to the home page, but reduced in height. The logo is positioned at the top left corner, and an interactive phone number is located at the bottom right corner with animated phone icon.
 
-**So….?**
+![screenshot of main image on services page](assets/media/main-image-services.webp)
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+- **Design:** The page is designed using a table format to organize the content effectively, with a faded background to enhance readability and visual appeal. Each service includes an icon to the left, making it easy to identify. The information is overlined with a fieldset with a legend title for clear categorization. Service descriptions include unordered list items to highlight key points or features. Each service description includes a "Get in Touch" link that takes potential customers to the contact section, facilitating easy communication and inquiries.
 
-**Can I opt out?**
+![screenshot of the services page images](assets/media/images-services.webp)
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+![screenshot of the service page information](assets/media/information-services.webp)
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+- **Responsive Design:**
 
-**Anything more?**
+![screenshot of services.html from i am responsive website displaying it in all sized devices](assets/media/resp-services.webp)
 
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
+### Contact Page
+
+- **Contact Page:** The contact page is designed to facilitate easy and painless communication between potential customers and the client. It offers multiple options to get in touch, including an interactive phone number, an interactive email link, a form for customers to fill in their details, and a map showing the client's location. Additionally, all the footer information is available on this page.
+
+![screenshot of contact page on website](assets/media/contact.webp)
+
+- **Submit Page:** The form is linked to a submit page that thanks the customer for their interest and informs them that the client will get back in touch as soon as possible. This is achieved by adding a dummy page and wrapping the form button in an anchor tag. Although this approach is not best practice and causes an error in the CSS validator, it was done for demonstration purposes only. The submit page retains the rest of the contact page information, allowing customers to explore other contact options if they need immediate assistance. A link is also provided to return to the home page.
+
+![screenshot of submit page on website](assets/media/submit-contact.webp)
+
+- **Responsive Design:**
+
+![screenshot of contact.html from i am responsive website displaying it in all sized devices](assets/media/resp-contact.webp)
+
+## Manual Testing
+
+I have conducted thorough manual testing of the website to ensure all links and functionalities are working as intended. The following steps outline the testing process:
+
+- **Header & Home Page:**
+  - Verified that the "Get a Quote" link in the header navigates to the contact page.
+  - Ensured that all other links in the header work as they should.
+  - Tested the internal links in the "Why Choose Us" section to ensure they navigate to the contact and service pages.
+
+- **Service Page:**
+  - Verified that the main image phone number and logo links work as they should.
+  - Checked that the "Get in Touch" links and images navigate to the contact section.
+
+- **Contact Page:**
+  - Ensured the interactive phone number and email links are functional.
+  - Submitted the contact form to verify redirection to the thank you page. Also tested that the form works correctly with the Code Institute form dump web page.
+  - Verified the map displays the correct location.
+
+- **Footer:**
+  - Verified that all service links in the footer navigate to the appropriate sections on the service page.
+  - Confirmed that contact details and social media links are functional.
+  - Checked that the small navigation menu in the lower footer is working correctly.
+
+Through this comprehensive manual testing, I have ensured that all links are operational and the website provides a great user experience.
+
+## Validator Testing
+
+### HTML
+
+- The website's HTML has passed the offical HTML Validator, ensuring that there are no issues and complys with web standards.
+  - [W3C validator](https://validator.w3.org/nu/?doc=https%3A%2F%2Fandyv773.github.io%2Fbcg-test%2F)
+
+![screenshot of website passing html validator](assets/media/html-validator.webp)  
+
+- **Contact Page:** There is an anchor wrapped around the form button, linking to the submit page. This bypasses all the form requirements and causes an error in the HTML validator, but it is only there for dummy purposes.
+
+![screenshot of error message in html validator for contact page regarding the form button anchor](assets/media/valid-error-contact.webp)
+
+### CSS 
+
+- The website's CSS has passed the offical CSS Validator, ensuring that there are no issues and complys with web standards.
+  - [(Jigsaw) validator](https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Fandyv773.github.io%2Fbcg-test&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en) 
+
+![screenshot of css validator website passing css](assets/media/css-validator.webp)
+
+   [![valid css](http://jigsaw.w3.org/css-validator/images/vcss)](http://jigsaw.w3.org/css-validator/check/referer)
+
+- There is one warning regarding the imported stylesheet from Google Fonts, but this does not affect the functionality or appearance of the website.
+
+![screenshot of css validator warning regarding imported stylesheet](assets/media/css-warning.webp)
+
+### Lighthouse Testing
+
+#### Accessibility
+
+- Home
+  - I have made sure that the website has achieved a 100% accessibility score in Lighthouse testing, ensuring it is user-friendly and accessible to all visitors.
+  - To do this I adjusted text colors/shadows, backgrounds and button sizes.
+
+![lighthouse test results of home page reading 100% on accessibility](assets/media/lighthouse-index.webp)
+
+- Services
+
+![lighthouse test results of services page reading 100% on accessibility](assets/media/lighthouse-services.webp)
+
+- Contact
+  - The Best Practices score for the contact page is lower due to the iframes maps, and cookies, which will be looked into at a later date.
+
+![lighthouse test results of contact page reading 100% on accessibility](assets/media/lighthouse-contact.webp)
+
+![screenshot of lighthouse score on contact page best practices](assets/media/lighthouse-error1-contact.webp)
+
+![screenshot of lighthouse score on contact page best practices drop down cookies](assets/media/lighthouse-error2-contact.webp)
+
+### Fixed Bugs
+
+The first fix I made, once running the HTML validator, was to replace the "</li>" closing tag in the footer with the "</ul>" closing tag. I also added a semicolon to the symbol in the copyright section. [GitHub Commits](https://github.com/AndyV773/bcg-test/commit/4540307080a17e0c0bc12c1fed542a22d7a09321)
+
+![screenshot of commit in github with the changes that i had made](assets/media/ul-semi-fix.webp)
+
+The next issues that I had in the HTML validator were whitespaces in the href phone number and an H1 issue.
+
+![screenshot of the error messages from html validator](assets/media/html-valid-error.webp)
+
+To fix this, I removed the white spaces and replaced the H1 with an H2. [GitHub Commits](https://github.com/AndyV773/bcg-test/commit/e0591f9e85ffc288a779bd0dfecc2865b4484bb0)
+
+![screenshot of commits changes that i made to fix the issue](assets/media/html-valid-fix.webp)
+
+I later reduced the number of headings and replaced them with "p" tags with IDs. I also adjusted the CSS code to fit, creating a better hierarchy for screen readers. [GitHub Commits](https://github.com/AndyV773/bcg-test/commit/a9c58fe3d22a15e84dff6025320873638077f580)
+
+![screenshot of commit changes made for headings in html](assets/media/html-header-fix.webp)
+
+![screenshot of commit changes made for headings in css](assets/media/css-header-fix.webp)
+
+Lastly, I went ahead and fixed the errors I encountered with the CSS validator. One issue was with the "box-sizing" property, which was causing an error. I'm not sure how it got there, but I assume it was meant to be "border-sizing". Additionally, the "rotate" property needed to be nested inside the "transform" property. [GitHub Commits](https://github.com/AndyV773/bcg-test/commit/046111864a500cef5150270cd40d83b9a87bbf00)
+
+![screenshot of commit changes made to fix validator issue](assets/media/css-valid-fix.webp)
+
+### Unfixed Bugs
+
+- **Contact Page:**
+  - Iframes map, Best Practices.
+
+## Wireframe
+
+I experimented with Balsamiq but found it to be more of a learning curve than a necessity for this project. I preferred diving straight into HTML and CSS. However, I did create some wireframes in Balsamiq to outline the website layout. Here are a few images of those wireframes.
+
+![screenshot of sketches in balsamiq](assets/media/bals-sketch.webp)
+
+![screenshot of wireframe in balsamiq](assets/media/bals-wireframe.webp)
+
+## Deployment
+
+The site has been deployed to GitHub pages on GitHub.
+
+- The steps to deploy are as follows:
+  - In the [GitHub Repository](https://github.com/AndyV773/bcg-test), navigate to the Settings tab
+  - In settings select pages in the left hand menu, select source deploy from branch
+  - Branch should be main and select from root, then click "Save"
+  - Once this has been selected and saved, the site should refresh. At the top of GitHub pages section, there will be a link to the site indicating the successful deployment.
+
+**The deployed website can be found here:** [BCG Building Contractors](https://andyv773.github.io/bcg-test)   
+
+## Credits 
+
+### Content
+
+- The code for the CSS dropdown navbar was taken from the [CI Love Running Project](https://code-institute-org.github.io/love-running-2.0/index.html).
+- The icons used in the website come from [Font Awesome](https://fontawesome.com/).
+- [W3S Web 3 School](https://www.w3schools.com/) has been used throughout the project as a reference to help remind me about various elements such as iframes and textarea. It was also used for gradient colors and text shadows.
+
+### Media 
+
+- The Favicon icon was generated using [Ionos](https://www.ionos.co.uk/tools/favicon-generator).
+- The images have been optimised for the web and converted to .webp using [Free Convert](https://www.freeconvert.com/webp-converter).
+- The images where taken from Google.
+
+## Usage
+
+To use the website, simply open it in a web browser. It is designed to be straightforward and user-friendly, providing visitors with information about the contractor's services and contact details.
 
 ---
 
-Happy coding!
+Feel free to get in touch if you have any questions or need further information.

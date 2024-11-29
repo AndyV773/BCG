@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- meta tags for search engines -->
+    <meta name="description"
+        content="BCG building contractors, based in England, London. carpentry & bricklaying, for loft conversions, extensions, roofing & refurbishments. London & Kent">
+    <meta name="keywords"
+        content="BCG, building contractors, refurbishments, loft conversions, conversions, extensions, roofing, kitchens, bathrooms, plumbing, bricklaying, carpentry, electrician, London, Bromley, Chislehurst, Kent">
+    <title>BCG | Contact</title>
+    <!-- favicon -->
+    <link rel="icon" type="image/png" sizes="192x192" href="assets/favicon/android-icon-192x192.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/favicon/favicon-16x16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/favicon/favicon-32x32.png">
+    <!-- stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+
+<body>
+    <!-- header -->
+    <header>
+        <!-- code credit from love running project https://code-institute-org.github.io/love-running-2.0/index.html -->
+        <!-- nav menu -->
+        <div id="menu-bar">
+            <input type="checkbox" id="nav-toggle" name="nav-toggle">
+            <label for="nav-toggle" class="nav-toggle-label">
+                <i class="fa-solid fa-bars"></i>
+            </label>
+            <nav>
+                <ul id="menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html" class="active">Contact</a></li>
+                </ul>
+            </nav>
+            <a href="index.html">
+                <h1 id="nav-logo" class="great-vibes"><span class="hidden-logo">Your</span>Logo</h1>
+            </a>
+            <a href="contact.html">
+                <p id="get-a-quote">Get a Quote</p>
+            </a>
+        </div>
+    </header>
+    <!-- main content -->
+    <main id="contact" class="grey-background">
+        <a href="index.html">
+            <p id="logo" class="great-vibes">Your Logo</p>
+        </a>
+        <!-- contact section -->
+        <section id="contact-section">
+            <h2 class="hidden-heading">Contact</h2>
+            <!-- contact details -->
+            <div id="contact-details">
+                <div>
+                    <a href="tel:0208000000" aria-label="give us a call">
+                        <p id="contact-phone"><i class="fa-solid fa-phone-volume"></i> 0208 000 000</p>
+                        <p id="contact-p-1" class="italic-font">Get in touch with us</p>
+                    </a>
+                </div>
+                <div>
+                    <a href="mailto:bcg.buildingservices16@gmail.com" aria-label="send us an email">
+                        <p id="contact-email"><i class="fa-regular fa-envelope"></i> bcg.buildingservices16<br
+                                class="br-remove-576px">@gmail.com</p>
+                        <p id="contact-p-2" class="italic-font">Send us a email</p>
+                    </a>
+                </div>
+            </div>
+            <!-- contact form -->
+            <form id="contact-form" action="https://formdump.codeinstitute.net/" method="post">
+                <h2><i class="fa-regular fa-envelope"></i> Contact Us</h2>
+                <label for="first-name"></label>
+                <input type="text" name="first_name" id="first-name" class="form-input" placeholder="First Name*"
+                    required>
+                <br>
+                <label for="last-name"></label>
+                <input type="text" name="last_name" id="last-name" class="form-input" placeholder="Last Name*" required>
+                <br>
+                <label for="phone-number"></label>
+                <!-- allows for a en 10-11 digit phone number -->
+                <input type="tel" name="phone_number" id="phone-number" pattern="[0-9]{10,11}" class="form-input"
+                    placeholder="Telephone*" required>
+                <br>
+                <label for="email-address"></label>
+                <input type="email" name="email_address" id="email-address" class="form-input" placeholder="Email*"
+                    required>
+                <br>
+                <label for="location"></label>
+                <input type="text" name="location" id="location" class="form-input"
+                    placeholder="Where is you property located?*" required>
+                <br>
+                <p class="italic-font">Please let us know the services you require:</p>
+                <label for="text-info" class="italic-font"></label>
+                <textarea name="comments" id="text-info" rows="6" cols="30" placeholder="Commets*" required></textarea>
+                <br>
+                <p class="italic-font">Preferd method of contact:</p>
+                <br>
+                <div class="radio-buttons">
+                    <div>
+                        <label for="email">Email</label>
+                        <input type="radio" name="contact_preference" id="email" value="email" checked required>
+                    </div>
+                    <div>
+                        <label for="phone">Phone</label>
+                        <input type="radio" name="contact_preference" id="phone" value="phone" required>
+                    </div>
+                </div>
+                <br>
+                <!-- anchor for dummy landing page -->
+                <a href="submit.html#submit-div"><button type="button" id="send-button">Send</button></a>
+            </form>
+            <!-- map of Canary Wharf -->
+            <div id="iframe-div">
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d4966.857788292927!2d-0.021108750000000003!3d51.505347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x487602ba7a12992f%3A0x4d821857a5e4a41!2sCanary%20Wharf%2C%20London!5e0!3m2!1sen!2suk!4v1721725526157!5m2!1sen!2suk"
+                    width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade" title="map of Canary Wharf"></iframe>
+            </div>
+        </section>
+    </main>
+    <!-- footer -->
+    <footer>
+        <section id="footer-section">
+            <!-- footer services list -->
+            <div id="footer-services-div">
+                <h3>Our Services</h3>
+                <ul id="footer-services-list">
+                    <li><a href="services.html#kitchens"><i class="fa-solid fa-caret-right"></i> Kitchens</a></li>
+                    <li><a href="services.html#doors"><i class="fa-solid fa-caret-right"></i> Doors</a></li>
+                    <li><a href="services.html#architraves"><i class="fa-solid fa-caret-right"></i> Architraves</a></li>
+                    <li><a href="services.html#fencing"><i class="fa-solid fa-caret-right"></i> Fencing</a></li>
+                    <li><a href="services.html#roofing"><i class="fa-solid fa-caret-right"></i> Roofing</a></li>
+                    <li><a href="services.html#loft-conversions"><i class="fa-solid fa-caret-right"></i> Loft
+                            Conversions</a></li>
+                    <li><a href="services.html#extensions"><i class="fa-solid fa-caret-right"></i> Extensions</a></li>
+                    <li><a href="services.html#new-builds"><i class="fa-solid fa-caret-right"></i> New Builds</a></li>
+                </ul>
+            </div>
+            <!-- footer contact information -->
+            <div id="footer-contact-div">
+                <h3>Contact Us</h3>
+                <ul id="contact-list">
+                    <!-- added breaks to keep everything in place -->
+                    <li>
+                        <p><span class="italic-font">Address:</span> <br>
+                            53 Springfield Road<br>
+                            London<br>
+                            SE50 1CV</p>
+                    </li>
+                    <li>
+                        <p><span class="italic-font">Company No:</span> 19202834</p>
+                    </li>
+                    <li>
+                        <a href="tel:0208000000" aria-label="give us a call">
+                            <p><span class="italic-font">Phone:</span> 0208 000 000</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="mailto:bcg.buildingservices16@gmail.com" aria-label="send us a email">
+                            <p><span class="italic-font">Email:</span><br class="br-remove-576px"> bcg.building<br
+                                    class="br-remove-576px">services16<br class="br-remove-992px">@gmail.com</p>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <!-- social and trade links -->
+            <div id="footer-social-div">
+                <ul id="social-networks">
+                    <li>
+                        <a href="https://www.facebook.com/" target="_blank" rel="noopener"
+                            aria-label="visit our facebook page (opens in a new tab)">
+                            <i class="fa-brands fa-facebook"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.x.com/" target="_blank" rel="noopener"
+                            aria-label="visit our x page (opens in a new tab)">
+                            <i class="fa-brands fa-square-x-twitter"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.youtube.com/" target="_blank" rel="noopener"
+                            aria-label="visit our youtube page (opens in a new tab)">
+                            <i class="fa-brands fa-square-youtube"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.instagram.com/" target="_blank" rel="noopener"
+                            aria-label="visit our instagram page (opens in a new tab)">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.mybuilder.com/" target="_blank" rel="noopener"
+                            aria-label="visit our my builder page (opens in a new tab)">
+                            <!-- div added for image logo link my builder -->
+                            <div id="my-builder"></div>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.checkatrade.com/" target="_blank" rel="noopener"
+                            aria-label="visit our check a trade page (opens in a new tab)">
+                            <!-- div added for image logo link check a trade-->
+                            <div id="check-a-trade"></div>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </section>
+        <!-- lower footer -->
+        <div id="copyright">
+            <p class="italic-font">Copyright &copy; 2024 BCG Building Contractors - All Rights Reserved.</p>
+            <ul id="footer-menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+    </footer>
+    <!-- font awesome kit -->
+    <script src="https://kit.fontawesome.com/73c0fc54c9.js" crossorigin="anonymous"></script>
+</body>
+
+</html>
