@@ -34,7 +34,7 @@ function showSlidesService() {
     const backgroundImages = [
         "url('assets/images/under-construction.webp')",
         "url('assets/images/buildings.webp')",
-        "url('assets/images/architrave.webp')"
+        "url('assets/images/services/fence.jpg')"
     ];
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace(" active-dot", "");

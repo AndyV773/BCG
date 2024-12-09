@@ -91,6 +91,7 @@ header a {
     width: 100%;
     z-index: 99;
     font-size: 100%;
+    /* box-shadow: 0 4px 10px #000; */
 }
 
 #menu {
@@ -318,6 +319,12 @@ main {
     max-width: 1000px;
 }
 
+.no-b-b {
+    background: none;
+    border: none;
+    box-shadow: none;
+}
+
 .flex-reverse {
     flex-direction: row-reverse;
 }
@@ -371,7 +378,7 @@ main {
     color: #fafafa;
     padding: 10px;
     border-radius: 4px;
-    font-size: 130%;
+    font-size: 100%;
     letter-spacing: 2px;
     font-weight: 700;
     box-shadow: 1px 1px 1px black;
@@ -412,7 +419,7 @@ main {
     max-height: 150px;
     margin: 10px 10px 0 10px;
     padding: 20px;
-    background-color: #404040;
+    background-color: #777;
     border-radius: 2px;
     display: flex;
     align-items: center;
@@ -447,7 +454,7 @@ main {
     margin: 10px;
     padding: 15px;
     border-radius: 2px;
-    background-color: #404040;
+    background-color: #777;
     box-shadow: 0 4px 10px #333;
 }
 
@@ -559,6 +566,7 @@ main {
     background-color: #404040;
     display: flex;
     flex-wrap: wrap;
+    box-shadow: 0 -3px 10px #000;
 }
 
 /* footer services list */
